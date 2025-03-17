@@ -1,0 +1,171 @@
+/* General Page Styling */
+body {
+    background-color: #000;
+    color: #0f0;
+    /* Default neon green text */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    font-size: 24px;
+    color: #00ff00;
+    /* Bright Green */
+    text-shadow: 0px 0px 10px #00ff00;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Banner Image Styling (Reduced Size) */
+.banner img {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+    opacity: 0.8;
+    animation: glitch 1.5s infinite;
+    border: 2px solid #00ff00;
+    box-shadow: 0px 0px 15px #00ff00;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    40% {
+        transform: translate(-2px, 2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    80% {
+        transform: translate(-2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #0ff;
+    /* Cyan Blue */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f00;
+    /* Bright Red on hover */
+    text-shadow: 0px 0px 10px #f00;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+    animation: fadeIn 2s;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 20px;
+    color: #ff4500;
+    /* Orange-Red */
+    text-shadow: 0px 0px 10px #ff4500;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #00ff00, #0ff);
+    /* Green to Cyan */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #f00, #ff4500);
+    /* Red to Orange */
+    box-shadow: 0px 0px 15px #f00;
+}
+
+/* Video Section */
+.video-tutorial {
+    padding: 20px;
+    color: #00ffcc;
+    /* Light Cyan */
+    text-shadow: 0px 0px 10px #00ffcc;
+}
+
+.video-tutorial video {
+    border: 2px solid #00ffcc;
+    box-shadow: 0px 0px 15px #00ffcc;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: #ff4500;
+    /* Orange-Red */
+    animation: flicker 1.5s infinite alternate;
+}
+
+html {
+    scroll-behavior: smooth;
+}
