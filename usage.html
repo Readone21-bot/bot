@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLVCKROCK - Usage & Exploitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>BLVCKROCK - Usage & Exploitation</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="install.html">Installation</a></li>
+            <li><a href="usage.html">Usage</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>How BLVCKROCK Works</h2>
+        <p>BLVCKROCK is a powerful **session hijacking and bypass tool** designed to exploit **Microsoft 365
+            authentication** weaknesses.</p>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Bypasses **Microsoft 365 authentication**, including **MFA-protected** accounts.</li>
+            <li>Steals **active session cookies**, allowing persistent access.</li>
+            <li>Uses **Cloudflare Worker API** for seamless redirection.</li>
+            <li>Integrates with **Telegram bot** for automated credential collection.</li>
+            <li>SSL-encrypted payloads for **stealth and undetectable execution**.</li>
+        </ul>
+
+        <h2>Steps to Use BLVCKROCK</h2>
+
+        <h3>1️⃣ Deploying the Attack Link</h3>
+        <ol>
+            <li>Copy the **generated attack link**.</li>
+            <li>Send the link to the target using social engineering techniques (email, chat, phishing sites).</li>
+            <li>Once the target clicks, their **session cookies** are captured.</li>
+        </ol>
+
+        <h3>2️⃣ Extracting the Cookies</h3>
+        <ol>
+            <li>The captured **session tokens** are stored in the Telegram bot.</li>
+            <li>Retrieve the **stolen cookies** from the Telegram bot in real-time.</li>
+            <li>Download the extracted `.txt` file containing the **Microsoft 365 session cookies**.</li>
+        </ol>
+
+        <h3>3️⃣ Hijacking the Account</h3>
+        <ol>
+            <li>Copy the stolen cookie text.</li>
+            <li>Visit <a href="https://login.microsoft.com" target="_blank">login.microsoft.com</a>.</li>
+            <li>Open the **browser console** (`Ctrl + Shift + I` on Chrome).</li>
+            <li>Navigate to **Console** and type `allow pasting`.</li>
+            <li>Paste the stolen session cookie.</li>
+            <li>Refresh the page to **gain full access** to the account without requiring MFA authentication.</li>
+        </ol>
+
+        <h2>Exploit Use Cases</h2>
+        <p>BLVCKROCK is effective for:</p>
+        <ul>
+            <li>Bypassing **corporate security** measures on Microsoft 365 accounts.</li>
+            <li>Accessing **MFA-protected** accounts without requiring a verification code.</li>
+            <li>Harvesting credentials in **phishing campaigns**.</li>
+            <li>Maintaining **persistent access** to compromised accounts.</li>
+        </ul>
+
+        <h2>Pricing</h2>
+        <ul>
+            <li><strong>15-Day License:</strong> $150</li>
+            <li><strong>30-Day License:</strong> $250</li>
+            <li><strong>1-Day Free Trial:</strong> Available for limited users (for trust concerns).</li>
+        </ul>
+
+        <!-- Button that redirects to the video section on index.html -->
+        <a href="index.html#video-tutorial" class="btn">Watch Tutorial</a>
+    </section>
+
+    <footer>
+        <p>© 2025 BLVCKROCK. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
