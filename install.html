@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLVCKROCK - Installation Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>BLVCKROCK - Installation Guide</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="install.html">Installation</a></li>
+            <li><a href="usage.html">Usage</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h2>Requirements</h2>
+        <ul>
+            <li>Windows RDP</li>
+            <li>Git installed on RDP</li>
+            <li>Domain (Access to registrar account)</li>
+            <li>Cloudflare account</li>
+            <li>Telegram account</li>
+        </ul>
+
+        <h2>Cloudflare Setup</h2>
+        <ol>
+            <li>Open your Cloudflare account.</li>
+            <li>Navigate to Profile > Click on Profile.</li>
+            <li>Navigate to API Token > Look for Global API Key.</li>
+            <li>Click **View** to see your Global API Key.</li>
+            <li>Copy and save the key.</li>
+        </ol>
+
+        <h2>Setting Up Telegram Bot</h2>
+        <ol>
+            <li>Search for **BotFather** in the Telegram search bar.</li>
+            <li>Type `/newbot` and give your bot a name.</li>
+            <li>Choose a username for your bot (must end with **bot**).</li>
+            <li>Copy and save your token.</li>
+            <li>Open your bot using the given link.</li>
+            <li>Start your bot (it should now be ready to receive messages).</li>
+        </ol>
+
+        <h2>Installation Steps</h2>
+        <ol>
+            <li>Open port **80** on your RDP.</li>
+            <li>Create a new **port rule** in network settings and allow inbound connections on port **80**.</li>
+            <li>Login to your RDP.</li>
+            <li>Copy and paste **ndbr_setup.bat** to the RDP.</li>
+            <li>Run **ndbr_setup.bat** as **Administrator**.</li>
+            <li>Open the **ndbr** folder and launch the application.</li>
+            <li>Click **Activate License** and paste your license key.</li>
+            <li>Copy and save the generated **server details for Telegram**.</li>
+            <li>Exit and restart the application.</li>
+            <li>Click **Start** to run BLVCKROCK.</li>
+        </ol>
+
+        <h2>Connecting to Telegram</h2>
+        <ol>
+            <li>Open Telegram.</li>
+            <li>Click on your Telegram bot link.</li>
+            <li>Start the bot.</li>
+            <li>Click **Add Server** and paste the saved code.</li>
+            <li>Click **Get All Servers** and select the added server.</li>
+        </ol>
+
+        <h2>Configuring Cloudflare</h2>
+        <ol>
+            <li>Click **Set Cloudflare Worker**.</li>
+            <li>Enter your **Cloudflare email** and **Global API Token**.</li>
+            <li>Click **Set Telegram Bot** and enter your bot token.</li>
+        </ol>
+
+        <h2>Adding Domain</h2>
+        <ol>
+            <li>Click **Add Domain** and enter your purchased domain.</li>
+            <li>Update your **domain nameservers** in your registrar account.</li>
+            <li>Wait **10 minutes** for propagation.</li>
+            <li>Click **Toggle Antibot** and enter your domain.</li>
+            <li>Click **Get Domains**.</li>
+            <li>Wait **5 minutes** for SSL installation and setup.</li>
+            <li>Copy the generated link (this is the attack link).</li>
+        </ol>
+
+        <h2>Next Steps</h2>
+        <p>Now deliver the link to your targets.</p>
+
+        <a href="usage.html" class="btn">Continue to Usage Guide</a>
+    </section>
+
+    <footer>
+        <p>© 2025 BLVCKROCK. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
